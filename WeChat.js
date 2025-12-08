@@ -1,4 +1,4 @@
-// 微信公众号广告清理脚本 by ChatGPT定制优化版
+// 微信公众号广告清理脚本
 
 let obj = JSON.parse($response.body);
 
