@@ -457,23 +457,23 @@
 ^https?:\/\/zconfig\.alibabausercontent\.com\/zconfig url reject
 # > 途虎养车
 # hostname = *.tuhu.cn
-# 开屏/启动广告
-^https?:\/\/.*\.tuhu\.cn\/.*\/(launch|splash|startPage)\/.* reject-dict
-# 首页Banner/轮播/弹窗
-^https?:\/\/.*\.tuhu\.cn\/.*\/home\/banner\/.* reject-dict
-^https?:\/\/.*\.tuhu\.cn\/.*\/popup\/(get|query) reject-dict
-^https?:\/\/.*\.tuhu\.cn\/.*\/float(ad|Adv)\/.* reject-dict
-# 首页信息流广告
-^https?:\/\/.*\.tuhu\.cn\/.*\/recommend\/ad\/.* reject-dict
-^https?:\/\/.*\.tuhu\.cn\/.*\/feed\/ad\/.* reject-dict
-# 搜索页/商品页推广内容
-^https?:\/\/.*\.tuhu\.cn\/.*\/search\/ad\/.* reject-dict
-^https?:\/\/.*\.tuhu\.cn\/.*\/product\/ad\/.* reject-dict
-# 我的页面/营销卡片/活动入口
-^https?:\/\/.*\.tuhu\.cn\/.*\/marketing\/.* reject-dict
-^https?:\/\/.*\.tuhu\.cn\/.*\/promotion\/.* reject-dict
-^https?:\/\/.*\.tuhu\.cn\/.*\/activity\/banner\/.* reject-dict
-# 第三方广告/统计SDK
+# === 开屏 / 启动广告 ===
+^https?:\/\/.*\.tuhu\.cn\/.*\/(launch|splash|startPage)\/.* reject-200
+# === 首页 Banner / 轮播 / 弹窗 ===
+^https?:\/\/.*\.tuhu\.cn\/.*\/home\/banner\/.* reject-200
+^https?:\/\/.*\.tuhu\.cn\/.*\/popup\/(get|query) reject-200
+^https?:\/\/.*\.tuhu\.cn\/.*\/float(ad|Adv)\/.* reject-200
+# === 首页信息流广告 ===
+^https?:\/\/.*\.tuhu\.cn\/.*\/recommend\/ad\/.* reject-200
+^https?:\/\/.*\.tuhu\.cn\/.*\/feed\/ad\/.* reject-200
+# === 搜索页 / 商品页推广 ===
+^https?:\/\/.*\.tuhu\.cn\/.*\/search\/ad\/.* reject-200
+^https?:\/\/.*\.tuhu\.cn\/.*\/product\/ad\/.* reject-200
+# === 我的页面 / 营销 / 活动 ===
+^https?:\/\/.*\.tuhu\.cn\/.*\/marketing\/.* reject-200
+^https?:\/\/.*\.tuhu\.cn\/.*\/promotion\/.* reject-200
+^https?:\/\/.*\.tuhu\.cn\/.*\/activity\/banner\/.* reject-200
+# === 第三方广告 / 统计 SDK ===
 ^https?:\/\/.*\.umeng\.com\/.* reject
 ^https?:\/\/.*\.growingio\.com\/.* reject
 ^https?:\/\/.*\.talkingdata\.net\/.* reject
