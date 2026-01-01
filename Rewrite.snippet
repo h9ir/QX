@@ -176,6 +176,18 @@
 # 开屏广告 【Runestoner】分享
 ^https?:\/\/app\.dewu\.com\/api\/v1\/app\/advertisement url reject
 ^https?:\/\/cdn\.poizon\.com\/node-common\/.*.jpg url reject-200
+# > Dadaqu
+# ===== dadaqu.pro 去广告 =====
+# 拦截常见广告接口
+^https?:\/\/dadaqu\.pro\/.*\/(ads?|ad|advert|banner|popup|sponsor) url reject
+# 拦截第三方广告脚本
+^https?:\/\/dadaqu\.pro\/.*\.js\?.*(ad|ads|banner) url reject
+# 拦截弹窗与统计
+^https?:\/\/dadaqu\.pro\/.*(popup|track|stat|analytics) url reject
+# 拦截图片广告
+^https?:\/\/dadaqu\.pro\/.*\/(ad|ads)\/.*\.(jpg|png|gif|webp) url reject
+# 拦截 iframe 广告页
+^https?:\/\/dadaqu\.pro\/.*\.html\?.*(ad|ads) url reject
 
 # >>>>>>>>>>>>>>> ✅ E ✅ <<<<<<<<<<<<<<
 # > 饿了么
