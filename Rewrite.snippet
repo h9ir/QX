@@ -400,34 +400,34 @@
 # > 瑞幸咖啡
 # hostname = *.luckincoffee.com, *.lkcoffee.com
 # ---------- 开屏 / 启动广告 ----------
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/advertising\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/launch\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/splash\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/advertising\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/launch\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/splash\/.* reject
 # ---------- 首页弹窗 ----------
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/popup\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/home\/popup\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/activity\/popup\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/popup\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/home\/popup\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/activity\/popup\/.* reject
 # ---------- Banner / 轮播 ----------
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/banner\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/operation\/banner\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/marketing\/banner\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/banner\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/operation\/banner\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/marketing\/banner\/.* reject
 # ---------- 首页运营位 ----------
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/operation\/home\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/home\/operation\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/operation\/home\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/home\/operation\/.* reject
 # ---------- 推荐 / 信息流 ----------
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/recommend\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/feed\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/smart\/recommend\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/recommend\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/feed\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/smart\/recommend\/.* reject
 # ---------- 营销 / 推广 ----------
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/marketing\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/promotion\/.* reject
-# ---------- 活动聚合（不影响优惠券） ----------
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/activity\/list\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/operation\/activity\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/marketing\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/promotion\/.* reject
+# ---------- 活动聚合 ----------
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/activity\/list\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/operation\/activity\/.* reject
 # ---------- 广告配置 / AB 实验 ----------
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/abtest\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/config\/advert\/.* reject
-^https:\/\/.*\.luckincoffee\.com\/api\/v\d\/config\/marketing\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/abtest\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/config\/advert\/.* reject
+^https:\/\/.*\.luckincoffee\.com\/api\/v[0-9]+\/config\/marketing\/.* reject
 
 # >>>>>>>>>>>>>>> ✅ S ✅ <<<<<<<<<<<<<<
 # > Spotify
