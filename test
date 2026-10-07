@@ -163,7 +163,6 @@ https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Quant
 https://raw.githubusercontent.com/h9ir/QX/refs/heads/main/AI.list, tag=AI, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list, tag=Global, force-policy=proxy, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list, tag=China, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
 FILTER_REGION, tag=CN, force-policy=direct, inserted-resource=true, enabled=true
 FILTER_LAN, tag=LAN, force-policy=direct, inserted-resource=true, enabled=true
