@@ -34,10 +34,10 @@
 profile_img_url =https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/fmz200-01.png
 resource_parser_url =https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 network_check_url =http://www.apple.com/library/test/success.html
-server_check_url =http://www.google.com/generate_204
+server_check_url = http://www.gstatic.com/generate_204
 ;server_check_user_agent = Agent/1.0
 server_check_timeout = 3000
-fallback_udp_policy= direct
+;fallback_udp_policy= direct
 ;doh_user_agent = Agent/1.0
 geo_location_checker =http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/server_location.js
 ;running_mode_trigger = filter, filter, LINK_22E171:all_proxy, LINK_22E172:all_direct
@@ -70,31 +70,29 @@ icmp_auto_reply = true
 ;prefer-doh3
 no-system
 no-ipv6
-server = 223.5.5.5
-server = 119.29.29.29
-server = /icloud.com/119.29.29.29
-server = /icloud.com.cn/119.29.29.29
-server = /jd.com/119.29.29.29
-server = /tencent.com/119.29.29.29
-server = /weixin.com/119.29.29.29
-server = /qq.com/119.29.29.29
-server = /taobao.com/223.5.5.5
-server = /tmall.com/223.5.5.5
-server = /alipay.com/223.5.5.5
-server = /alicdn.com/223.5.5.5
-server = /aliyun.com/223.5.5.5
-server = /163.com/223.5.5.5
-server = /netease.com/223.5.5.5
-server = /bilibili.com/223.5.5.5
-server = /bilivideo.com/223.5.5.5
-server = /douyin.com/223.5.5.5
-server = /douyincdn.com/223.5.5.5
+server = /*.icloud.com/119.29.29.29
+server = /*.icloud.com.cn/119.29.29.29
+server = /*.jd.com/119.29.29.29
+server = /*.tencent.com/119.29.29.29
+server = /*.weixin.com/119.29.29.29
+server = /*.qq.com/119.29.29.29
+server = /*.taobao.com/223.5.5.5
+server = /*.tmall.com/223.5.5.5
+server = /*.alipay.com/223.5.5.5
+server = /*.alicdn.com/223.5.5.5
+server = /*.aliyun.com/223.5.5.5
+server = /*.163.com/223.5.5.5
+server = /*.netease.com/223.5.5.5
+server = /*.bilibili.com/223.5.5.5
+server = /*.bilivideo.com/223.5.5.5
+server = /*.douyin.com/223.5.5.5
+server = /*.douyincdn.com/223.5.5.5
 ;doq-server = quic://dns.adguard.com
 ;doq-server = quic://dns1.example.com, quic://dns2.example.com
 ;doq-server = quic://dns.adguard.com, excluded_ssids=SSID1
 ;doq-server = quic://dns.adguard.com, included_ssids=SSID2
 doh-server = https://dns.alidns.com/dns-query, https://doh.pub/dns-query
-address = /www.google.cn/203.208.41.65
+;address = /www.google.cn/203.208.41.65
 ;doh-server = https://exmaple1.com/dns-query, https://exmaple2.com/dns-query
 ;doh-server = https://223.6.6.6/dns-query, excluded_ssids=SSID1
 ;doh-server = https://223.5.5.5/dns-query, included_ssids=SSID2
@@ -296,7 +294,6 @@ ip-cidr, 10.0.0.0/8, direct
 ip-cidr, 127.0.0.0/8, direct
 ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
-ip-cidr, 127.0.0.0/8, direct
 ;ip-cidr, 224.0.0.0/24, direct
 geoip, cn, direct
 ;geoip, cn, direct, force-cellular
