@@ -33,11 +33,11 @@
 [general]
 profile_img_url =https://raw.githubusercontent.com/fmz200/wool_scripts/main/icons/author/fmz200-01.png
 resource_parser_url =https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
-network_check_url =http://apple.com
+network_check_url =http://www.apple.com/library/test/success.html
 server_check_url =http://www.google.com/generate_204
 ;server_check_user_agent = Agent/1.0
 server_check_timeout = 3000
-fallback_udp_policy= reject
+fallback_udp_policy= direct
 ;doh_user_agent = Agent/1.0
 geo_location_checker =http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/scripts/server_location.js
 ;running_mode_trigger = filter, filter, LINK_22E171:all_proxy, LINK_22E172:all_direct
@@ -45,8 +45,8 @@ dns_exclusion_list = *.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id
 ;dns_reject_domain_behavior = loopback
 ;ssid_suspended_list = LINK_22E174, LINK_22E175
 ;enhanced_compatibility_ssid_list = LINK_22E174, LINK_22E175
-udp_whitelist = 53, 123, 67, 68, 853
-udp_drop_list = 443, 3478-3481, 50000-65535
+udp_whitelist = 53, 123, 443, 3478-3481, 50000-65535
+udp_drop_list = 443
 excluded_routes = 192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8, 239.255.255.250/32, 224.0.0.0/4
 icmp_auto_reply = true
 
@@ -70,11 +70,8 @@ icmp_auto_reply = true
 ;prefer-doh3
 no-system
 no-ipv6
-server = 119.29.29.29
-server = 117.50.10.10
 server = 223.5.5.5
-server = 8.8.8.8
-server = 1.1.1.1
+server = 119.29.29.29
 server = /icloud.com/119.29.29.29
 server = /icloud.com.cn/119.29.29.29
 server = /jd.com/119.29.29.29
@@ -88,6 +85,10 @@ server = /alicdn.com/223.5.5.5
 server = /aliyun.com/223.5.5.5
 server = /163.com/223.5.5.5
 server = /netease.com/223.5.5.5
+server = /bilibili.com/223.5.5.5
+server = /bilivideo.com/223.5.5.5
+server = /douyin.com/223.5.5.5
+server = /douyincdn.com/223.5.5.5
 ;doq-server = quic://dns.adguard.com
 ;doq-server = quic://dns1.example.com, quic://dns2.example.com
 ;doq-server = quic://dns.adguard.com, excluded_ssids=SSID1
@@ -291,12 +292,13 @@ domain,msmp.abchina.com.cn,reject
 ;host-suffix, googleapis.com, proxy, multi-interface-balance
 ;host-suffix, googleapis.com, proxy, via-interface=pdp_ip0
 ;ip6-cidr, 2001:4860:4860::8888/32, direct
-;ip-cidr, 10.0.0.0/8, direct
-;ip-cidr, 127.0.0.0/8, direct
-;ip-cidr, 172.16.0.0/12, direct
-;ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 127.0.0.0/8, direct
 ;ip-cidr, 224.0.0.0/24, direct
-;geoip, cn, direct
+geoip, cn, direct
 ;geoip, cn, direct, force-cellular
 ;ip-asn, 6185, proxy
 # You can add below host-keyword rule to skip the DNS query for all the non-matched hosts. Pure IP requests won't be matched by the host related rules.
